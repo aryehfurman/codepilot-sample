@@ -12,7 +12,7 @@
     --background: #0a0a0a;
     --surface: #141414;
     --surface-light: #1f1f1f;
-    --text: #ffffff;
+    --text: #ff0000;
     --text-muted: #a1a1aa;
     --border: rgba(255, 255, 255, 0.1);
     --gradient: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);

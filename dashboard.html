@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <span class="logo">⚡</span>
+            <span class="brand-name">Nexus</span>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active">
+                <span class="icon">📊</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="icon">📁</span>
+                <span>Projects</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="icon">👥</span>
+                <span>Team</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="icon">📈</span>
+                <span>Analytics</span>
+            </a>
+            <a href="#" class="nav-item">
+                <span class="icon">⚙️</span>
+                <span>Settings</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="user-info">
+                <div class="avatar">AF</div>
+                <div class="user-details">
+                    <span class="user-name">Aryeh Furman</span>
+                    <span class="user-role">Admin</span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="dashboard-main">
+        <header class="dashboard-header">
+            <div class="header-left">
+                <h1>Dashboard</h1>
+                <p class="subtitle">Welcome back! Here's what's happening.</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn-secondary">
+                    <span>Export</span>
+                </button>
+                <button class="btn-primary">
+                    <span>+ New Project</span>
+                </button>
+            </div>
+        </header>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon blue">📁</div>
+                <div class="stat-content">
+                    <span class="stat-value">12</span>
+                    <span class="stat-label">Active Projects</span>
+                </div>
+                <span class="stat-change positive">+2 this week</span>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+                <div class="stat-content">
+                    <span class="stat-value">48</span>
+                    <span class="stat-label">Tasks Completed</span>
+                </div>
+                <span class="stat-change positive">+12 this week</span>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon purple">👥</div>
+                <div class="stat-content">
+                    <span class="stat-value">8</span>
+                    <span class="stat-label">Team Members</span>
+                </div>
+                <span class="stat-change neutral">No change</span>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon orange">⏱️</div>
+                <div class="stat-content">
+                    <span class="stat-value">94%</span>
+                    <span class="stat-label">On-time Delivery</span>
+                </div>
+                <span class="stat-change positive">+5% this month</span>
+            </div>
+        </section>
+
+        <div class="dashboard-grid">
+            <section class="recent-projects">
+                <div class="section-header">
+                    <h2>Recent Projects</h2>
+                    <a href="#" class="view-all">View All →</a>
+                </div>
+                <div class="projects-list">
+                    <div class="project-item">
+                        <div class="project-color blue"></div>
+                        <div class="project-info">
+                            <h4>Website Redesign</h4>
+                            <p>Marketing Team</p>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                            <span>75%</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-color green"></div>
+                        <div class="project-info">
+                            <h4>Mobile App v2.0</h4>
+                            <p>Engineering Team</p>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span>45%</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-color purple"></div>
+                        <div class="project-info">
+                            <h4>API Integration</h4>
+                            <p>Backend Team</p>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                            <span>90%</span>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="project-color orange"></div>
+                        <div class="project-info">
+                            <h4>Customer Portal</h4>
+                            <p>Product Team</p>
+                        </div>
+                        <div class="project-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 30%"></div>
+                            </div>
+                            <span>30%</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-feed">
+                <div class="section-header">
+                    <h2>Recent Activity</h2>
+                    <a href="#" class="view-all">View All →</a>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-avatar">SM</div>
+                        <div class="activity-content">
+                            <p><strong>Sarah M.</strong> completed task "Update landing page copy"</p>
+                            <span class="activity-time">2 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">JD</div>
+                        <div class="activity-content">
+                            <p><strong>John D.</strong> created new project "Q1 Campaign"</p>
+                            <span class="activity-time">4 hours ago</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">EK</div>
+                        <div class="activity-content">
+                            <p><strong>Emily K.</strong> uploaded 3 new files to "Design Assets"</p>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-avatar">MR</div>
+                        <div class="activity-content">
+                            <p><strong>Mike R.</strong> commented on "API Documentation"</p>
+                            <span class="activity-time">Yesterday</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="team-section">
+            <div class="section-header">
+                <h2>Team Performance</h2>
+                <select class="time-filter">
+                    <option>This Week</option>
+                    <option>This Month</option>
+                    <option>This Quarter</option>
+                </select>
+            </div>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">SM</div>
+                    <div class="member-info">
+                        <h4>Sarah M.</h4>
+                        <p>Designer</p>
+                    </div>
+                    <div class="member-stats">
+                        <span class="tasks-done">12 tasks</span>
+                        <div class="rating">⭐ 4.9</div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">JD</div>
+                    <div class="member-info">
+                        <h4>John D.</h4>
+                        <p>Developer</p>
+                    </div>
+                    <div class="member-stats">
+                        <span class="tasks-done">18 tasks</span>
+                        <div class="rating">⭐ 4.8</div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">EK</div>
+                    <div class="member-info">
+                        <h4>Emily K.</h4>
+                        <p>Marketing</p>
+                    </div>
+                    <div class="member-stats">
+                        <span class="tasks-done">9 tasks</span>
+                        <div class="rating">⭐ 4.7</div>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">MR</div>
+                    <div class="member-info">
+                        <h4>Mike R.</h4>
+                        <p>Backend</p>
+                    </div>
+                    <div class="member-stats">
+                        <span class="tasks-done">15 tasks</span>
+                        <div class="rating">⭐ 4.9</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

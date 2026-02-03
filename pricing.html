@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Nexus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="logo">⚡</span>
+            <span class="brand-name">Nexus</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="pricing.html" class="active">Pricing</a>
+            <a href="about.html">About</a>
+            <a href="dashboard.html">Dashboard</a>
+        </div>
+        <div class="nav-actions">
+            <a href="#" class="btn-secondary">Sign In</a>
+            <a href="#" class="btn-primary">Get Started</a>
+        </div>
+    </nav>
+
+    <main class="pricing-page">
+        <section class="pricing-hero">
+            <h1>Simple, Transparent Pricing</h1>
+            <p>Choose the plan that works best for your team</p>
+
+            <div class="billing-toggle">
+                <span class="toggle-label">Monthly</span>
+                <label class="toggle">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Annual <span class="save-badge">Save 20%</span></span>
+            </div>
+        </section>
+
+        <section class="pricing-cards">
+            <div class="pricing-card">
+                <div class="plan-header">
+                    <h3>Starter</h3>
+                    <p class="plan-description">Perfect for small teams</p>
+                </div>
+                <div class="plan-price">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="29" data-annual="23">29</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span> Up to 5 team members</li>
+                    <li><span class="check">✓</span> 10 projects</li>
+                    <li><span class="check">✓</span> Basic analytics</li>
+                    <li><span class="check">✓</span> Email support</li>
+                    <li class="disabled"><span class="x">×</span> Custom integrations</li>
+                    <li class="disabled"><span class="x">×</span> Advanced security</li>
+                </ul>
+                <button class="btn-secondary full-width">Start Free Trial</button>
+            </div>
+
+            <div class="pricing-card featured">
+                <div class="popular-badge">Most Popular</div>
+                <div class="plan-header">
+                    <h3>Professional</h3>
+                    <p class="plan-description">For growing teams</p>
+                </div>
+                <div class="plan-price">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="79" data-annual="63">79</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span> Up to 20 team members</li>
+                    <li><span class="check">✓</span> Unlimited projects</li>
+                    <li><span class="check">✓</span> Advanced analytics</li>
+                    <li><span class="check">✓</span> Priority support</li>
+                    <li><span class="check">✓</span> Custom integrations</li>
+                    <li class="disabled"><span class="x">×</span> Advanced security</li>
+                </ul>
+                <button class="btn-primary full-width">Start Free Trial</button>
+            </div>
+
+            <div class="pricing-card">
+                <div class="plan-header">
+                    <h3>Enterprise</h3>
+                    <p class="plan-description">For large organizations</p>
+                </div>
+                <div class="plan-price">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="199" data-annual="159">199</span>
+                    <span class="period">/month</span>
+                </div>
+                <ul class="plan-features">
+                    <li><span class="check">✓</span> Unlimited team members</li>
+                    <li><span class="check">✓</span> Unlimited projects</li>
+                    <li><span class="check">✓</span> Custom analytics</li>
+                    <li><span class="check">✓</span> 24/7 dedicated support</li>
+                    <li><span class="check">✓</span> Custom integrations</li>
+                    <li><span class="check">✓</span> Advanced security & SSO</li>
+                </ul>
+                <button class="btn-secondary full-width">Contact Sales</button>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Can I change plans later?</h4>
+                    <p>Yes, you can upgrade or downgrade your plan at any time. Changes take effect immediately.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept all major credit cards, PayPal, and wire transfers for enterprise plans.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Is there a free trial?</h4>
+                    <p>Yes! All plans come with a 14-day free trial. No credit card required.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What happens when my trial ends?</h4>
+                    <p>You'll be prompted to choose a plan. Your data is saved for 30 days if you don't subscribe.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <span class="logo">⚡</span>
+                <span>Nexus</span>
+            </div>
+            <p>&copy; 2024 Nexus. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Billing toggle
+        document.getElementById('billing-toggle').addEventListener('change', function() {
+            const amounts = document.querySelectorAll('.amount');
+            amounts.forEach(amount => {
+                const monthly = amount.dataset.monthly;
+                const annual = amount.dataset.annual;
+                amount.textContent = this.checked ? annual : monthly;
+            });
+        });
+    </script>
+</body>
+</html>

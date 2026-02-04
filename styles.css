@@ -765,7 +765,7 @@ h3 {
     min-height: 100vh;
 }
 
-.sidebar {
+.dashboard-body .sidebar {
     width: 260px;
     background: var(--surface);
     border-right: 1px solid var(--border);
@@ -1354,7 +1354,7 @@ h3 {
 }
 
 @media (max-width: 768px) {
-    .sidebar {
+    .dashboard-body .sidebar {
         display: none;
     }
 

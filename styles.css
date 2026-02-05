@@ -167,6 +167,17 @@ h3 {
     color: var(--text);
 }
 
+/* Banner */
+.welcome-banner {
+    background: var(--gradient);
+    color: white;
+    text-align: center;
+    padding: 16px 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 100px;
+}
+
 /* Hero Section */
 .hero {
     min-height: 100vh;
